@@ -140,9 +140,17 @@ color: #0096dd;
 .project{
     margin: 20px;
 }
-.pro2 p{
-    padding-left: 100px;
+.pro2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
 }
+.pro2 img{
+    width: 300px;
+    height: 300px;
+}
+
 .hr5{
     width: 900px;
     margin: auto;
