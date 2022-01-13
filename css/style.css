@@ -2,24 +2,112 @@
     margin: 0px;
     padding: 0px;
 }
+:root {
+    
+    --text-color: #fff;
+  }
+
 body{
     background-color: #ececec;
     font-family: 'Roboto Slab', serif;
 }
+.dark-mode {
+    background-color: black;
+    color: #ffc200;
+
+  }
 header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+   grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+.hr1{
+    
+    margin: auto;
+}
+.button{
+    font-size: 10px;
+    color: white;
+    background-color: #ffc200;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+}
+.button1{
+    font-size: 10px;
+    color: white;
+    background-color: #ffc200;
+    padding: 15px 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 80px;
+}
+.button:hover{
+    background-color: #014272;
+    color: #fff;
+    padding: 17px 32px;
+}
+.button1:hover{
+    background-color: #014272;
+    color: #fff;
+    padding: 17px 32px;
+}
+.container{
+    position: relative;
+}
+
+/* style of mobile media */
+@media screen and (max-width:731px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .one{
+        text-align: center;
+    }
+    header img{
+        margin-right: 50px;
+    }
+}
+@media screen {
+    
 }
 header img{
    width: 400px;
    border-bottom: 5px solid #ffc200;
-   margin-top: 50px;
+  
    margin-left: 50px;
 }
+@media screen and (max-width:600px){
+    header img{
+        width:300px;
+        margin: 50px;
+    }
+}
 header .one{
-    margin-top: 60px;
+    
     margin-right: 50px;
+}
+@media screen and (max-width:600px) {
+    header .one{
+        
+        margin-left: 50px
+    
+    }
+    
+}
+.hr2{
+    width: 80%;
+    margin: auto;
 }
 header .one h1{
     color:#014272;
@@ -27,7 +115,7 @@ header .one h1{
     margin-bottom: 10px;
 }
 .one .h2{
-    display: block;
+    
     width: fit-content;
     border-bottom:5px solid #ffc200;
     font-size: 35px;
@@ -36,25 +124,18 @@ header .one h1{
    margin-bottom: 20px;
 }
 .homeme{
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    column-gap: 10px;
-    margin: 30px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+   
 }
-.homeme2{
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    column-gap: 10px;
-    justify-items: center;
-    margin-left: 50px;
-    margin-bottom: 20px;
+.homeme i{
+    padding: 10px;
 }
-.hr2{
-    width: 900px;
-    margin: auto;
-    
-}
+
+
+
 .skill{
     color: #00225a;
    font-size: 30px;
@@ -64,6 +145,7 @@ header .one h1{
 .h3{
     border-bottom:5px solid #ffc200 ;
 }
+
 .lang{
     display: flex;
     flex-wrap: wrap;
@@ -84,11 +166,7 @@ header .one h1{
 .lang p{
     margin: 20px;
 }
-.hr3{
-    width: 900px;
-    margin: auto;
-    
-}
+
 .exp{
     color: #00225a;
    font-size: 30px;
@@ -101,30 +179,31 @@ header .one h1{
 .service{
 margin: 20px;
 }
-.ex{
+.experience{
     display: grid;
-   grid-template-columns: 1fr 3fr;
-   margin-top: 10px;
-   margin-left:50px;
-   margin-bottom: 50px;
+   grid-template-columns: auto auto auto;
+   grid-gap: 40px 60px;
+   padding: 20px;
+   justify-content: center;
+                                                 
 }
-.ex1{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin-top: 10px;
-    margin-left:50px;
-    margin-bottom: 50px;
-}
-.year{
-    padding-left: 100px;
-}
-.par1 .parg{
-color: #0096dd;
-}
-.hr4{
-    width: 900px;
+.hr3{
+    width: 80%;
     margin: auto;
 }
+
+.pargraph {
+    border-left: 2px solid gray;
+padding-left: 20px;
+color: #0096dd;
+}
+.pargraph2{
+    border-left: 2px solid gray;
+    padding-left: 20px;
+    color: #0096dd;
+    }
+
+
 .project{
     margin: 20px;
 }
@@ -134,6 +213,22 @@ color: #0096dd;
      padding: 20px;
      margin-left: 50px;
 }
+.project1 {
+    border: 2px solid gainsboro;
+    background-color: gainsboro;
+    border-radius: 5px;
+    box-shadow: 5px grey;
+}
+.project1 p{
+    padding: 10px;
+    text-align: center;
+    border-bottom:5px solid #ffc200 ;
+}
+.hr4{
+    width: 80%;
+    margin: auto;
+}
+
 .h5{
     border-bottom:5px solid #ffc200 ;
 }
@@ -150,11 +245,12 @@ color: #0096dd;
     width: 300px;
     height: 300px;
 }
-
 .hr5{
-    width: 900px;
+    width: 80%;
     margin: auto;
 }
+
+
 .con{
     color: #00225a;
     font-size: 30px;
@@ -166,12 +262,12 @@ color: #0096dd;
 }
 .social{
     display: grid;
-    grid-template-columns: 3fr 2fr 3fr;
-    margin: 30px;
-    justify-content: center;
+    grid-template-rows: 1fr 1fr ;
     justify-items: center;  
 
 }
-.social .two{
-    margin-left: 100px;
+.social i{
+    padding: 20px;
 }
+
+
