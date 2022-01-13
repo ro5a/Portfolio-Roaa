@@ -164,7 +164,7 @@ header .one h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-   
+   margin: 10px;
    
 }
 .homeme i{
@@ -299,12 +299,60 @@ color: #0096dd;
 }
 .social{
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: auto auto auto ;
+    row-gap: 10px;
     justify-items: center;  
+    margin: 10px;
 
 }
-.social i{
-    padding: 20px;
+
+.contuct{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.form{
+    color: #00225a;
+    padding: 20px 40px 20px 40px;
+    
+border-radius: 5px;
+box-shadow: 10px gray;
+background-color: #fff;
+}
+.form input{
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow:1px 5px 5px 1px grey;
+    padding: 15px 40px;
+    border-bottom:2px  solid #ffc200;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.form textarea{
+    border-radius: 2px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:2px  solid #ffc200;
+    margin: 10px;
+    width: 210px;
+    height: 150px;
+    box-shadow:1px 5px 5px 1px grey;
+    padding: 15px;
+
+}
+.button3{
+    font-size: 20px;
+    color: white;
+    background-color: #ffc200;
+    padding: 10px 100px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    margin-left: 10px;
 }
 
 
